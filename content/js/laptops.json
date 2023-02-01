@@ -1,0 +1,113 @@
+[
+    {
+        "brand":"Dell Fostro 3510",
+        "size":"15.6 inch",
+        "hard":"1 TB+512GB SSD",
+        "cpu":"Core i7-10510U",
+        "RAM":"16 GB",
+        "img":"content/assets/laptops/dell fostro.jpg",
+        "img2":"content/assets/laptops/dell fostro-1.jpg.jpg",
+        "price":"31950 EGP",
+        "other":"1.7 KG cpu speed 2.8 HZ",
+	"level":"mid"
+    }
+    ,
+    {
+        "brand":"Dell Inspiron 15",
+        "size":"15 inch",
+        "hard":"256 GB PCIe NVMe M.2 SSD",
+        "cpu":"Ryzen 5 3450U",
+        "RAM":"8 GB",
+        "img":"content/assets/laptops/dell inspiron15.jpg",
+        "img2":"content/assets/laptops/dell inspiron15-1.jpg.jpg",
+        "price":"21669 EGP",
+        "other":"Multi-Touch 220 nits Anti-glare ,AMD Radeon Vega 8 Graphics",
+	"level":"mid"
+    },
+ {
+        "brand":"Dell Inspiron 14",
+        "size":"15 inch",
+        "hard":"256 GB PCIe NVMe M.2 SSD",
+        "cpu":"Ryzen 5 3450U",
+        "RAM":"8 GB",
+        "img":"content/assets/laptops/dell inspiron15.jpg",
+        "img2":"content/assets/laptops/dell inspiron15-1.jpg.jpg",
+        "price":"21669 EGP",
+        "other":"Multi-Touch 220 nits Anti-glare ,AMD Radeon Vega 8 Graphics",
+	"level":"mid"
+    },
+    {
+        "brand":"Dell Intel",
+        "size":"15 inch",
+        "hard":"1 TB",
+        "cpu":"Core i3-1005G1",
+        "RAM":"8 GB",
+        "img":"content/assets/laptops/dell intel.jpg",
+        "img2":"content/assets/laptops/dell intel-1.jpg.jpg",
+        "price":"13800 EGP",
+        "other":"U-HD Graphics, Windows 10,cpu speed2.1 Hz,1 KG" ,
+	"level":"low"
+    },
+    {
+        "brand":"Dell XPS 13",
+        "size":"13.4 inch",
+        "hard":"512 GB",
+        "cpu":"Intel Core i7-1185G7",
+        "RAM":"16 GB",
+        "img":"content/assets/laptops/dellxpc13.jpg",
+        "img2":"content/assets/laptops/dellxpc13-1.jpg",
+        "price":"51000 EGP",
+        "other":"3456 x 2160 (3.5K) touch (16:10 ratio),2.8 pounds" ,
+	"level":"high"
+
+    },
+    {
+        "brand":"Dell XPS 15 9520",
+        "size":"15.6 inch",
+        "hard":"1TB SSD",
+        "cpu":"Core i9-12900HK",
+        "RAM":"32 GB",
+        "img":"content/assets/laptops/dellxps15.jpg",
+        "img2":"content/assets/laptops/dellxps15-2.jpg",
+        "price":"94750 EGP",
+        "other":"Graphics Card: NVIDIA GeForce RTX 3050 Ti, 4 GB GDDR6, 45 W,12th generation",
+	"level":"high" 
+    },
+    {
+        "brand":"HP Pavilion 15-ec2046ne",
+        "size":"15 inch",
+        "hard":"1256 GB",
+        "cpu":"Ryzen 7 5800H 8-Cores",
+        "RAM":"16 GB",
+        "img":"content/assets/laptops/hp pavilion.jpg",
+        "img2":"content/assets/laptops/hp pavilion-1.jpg",
+        "price":"42025 EGP",
+        "other":"NVIDIA GeForce RTX 3050 4GB GDDR6 Graphics" ,
+	"level":"high"
+    },
+    {
+        "brand":"HP 15s",
+        "size":"15.6 inch",
+        "hard":"Hard 512 GB M.2 SSD",
+        "cpu":"Core i3-1215U 6 Cores",
+        "RAM":"4 GB",
+        "img":"content/assets/laptops/hp15s.jpg",
+        "img2":"content/assets/laptops/hp15s-1.jpg",
+        "price":"13999 EGP",
+        "other":"GPU Intel UHD Graphics"  ,
+	"level":"low" 
+    },
+    {
+        "brand":"HP 255G8",
+        "size":"15 inch",
+        "hard":"1 TB",
+        "cpu":"RYZEN 5 3500U 4 Cores",
+        "RAM":"8 GB",
+        "img":"content/assets/laptops/hp255.jpg",
+        "img2":"content/assets/laptops/hp255-1.jpg",
+        "price":"18605 EGP",
+        "other":"AMD Radeon Vega 8 Graphics" ,
+	"level":"low"
+    }
+
+]

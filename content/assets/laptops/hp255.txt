@@ -1,0 +1,17 @@
+HP 255 G8 Laptop - RYZEN 5 3500U 4 Cores,
+ 8 GB RAM, 1 TB HDD, AMD Radeon Vega 8 Graphics,
+ 15.6" diagonal HD (1366 x 768) anti-glare 250 nits, 
+DOS - Asteroid silver
+
+EGP18,604.80
+
+Brand	HP
+Series	HP 255 G8 32M98EA
+Screen size	15 Inches
+Colour	Silver
+Hard disk size	1 TB
+CPU model	Ryzen 5 3500U
+Installed RAM memory size	8 GB
+Operating System	DOS
+Special features	2 Super Speed USB Type-A 5Gbps signaling rate; 1 SuperSpeed USB Type-C® 5Gbps signaling rate; 1 RJ-45; 1 headphone/microphone combo; 1 HDMI 1.4b; 1 AC power, Quad Core2 Super Speed USB Type-A 5Gbps signaling rate; 1 SuperSpeed USB Type-C® 5Gbps signaling rate; 1 RJ-45; 1 headphone/microphone combo; 1 HDMI 1.4b; 1 AC power,… See more
+Graphics card description	Integrated

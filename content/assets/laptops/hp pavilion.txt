@@ -1,0 +1,17 @@
+HP Pavilion Gaming Laptop 15-ec2046ne - Ryzen 7 5800H 8-Cores,
+
+ 16GB RAM, 1TB HDD + 256GB SSD, NVIDIA GeForce RTX 3050 4GB GDDR6 Graphics,
+ 15.6" FHD (1920 x 1080) IPS 144 Hz, Backlit Keyboard, Dos
+
+EGP42,024.96
+
+Brand	HP
+Series	15-ec2046ne
+Screen size	15
+Colour	Black
+Hard disk size	1256 GB
+CPU model	Ryzen 7 5800H
+Installed RAM memory size	16 GB
+Operating System	DOS
+Graphics card description	Dedicated
+Graphics co-processor	NVIDIA GeForce RTX 3050

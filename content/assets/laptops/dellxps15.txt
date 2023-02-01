@@ -1,0 +1,22 @@
+Laptop Dell XPS 15 9520, Core i9-12900HK, 32GB RAM, 1TB SSD, 4GB NVIDIA, Win 11
+
+94,750.00 EGP
+
+
+CPU: Intel Core i9-12900HK (24MB Cache, 16 Threads, 2.50 GHz base frequency, up to 5.0 GHz max turbo frequency, 14 cores)
+
+Generation:  12th
+
+Display:
+Display: 15.6″, 3.5K 3456×2160, 60Hz, OLED, Touchscreen, Anti-Reflect, 400 nit, Infinity Edge
+
+Memory: 32GB, DDR4, 3200 MHz
+
+Hard Drive: 1TB, M.2, PCIe NVMe, SSD
+
+Graphics Card: NVIDIA GeForce RTX 3050 Ti, 4 GB GDDR6, 45 W
+
+Keyboard: English keyboard, black, backlit, Fingerprint Reader
+
+Wireless: Killer Wi-Fi 6 AX1650 (2×2) and Bluetooth 5.1
+

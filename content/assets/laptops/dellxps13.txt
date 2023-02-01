@@ -1,0 +1,10 @@
+Price: $1,649 ($1,699 as reviewed)
+CPU: Intel Core i7-1185G7
+GPU: Iris Xe
+RAM: 16GB
+Storage: 512GB
+Display: 13.4-inch, 3456 x 2160 (3.5K) touch (16:10 ratio)
+Battery: 7:59 (Dark mode); 7:48 (Light mode)
+Connectivity: Wi-Fi 6, Bluetooth 5.1
+Size: 11.6 x 7.8 x 0.6 inches
+Weight: 2.8 pounds

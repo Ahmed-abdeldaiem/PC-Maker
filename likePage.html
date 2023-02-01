@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- bootstrap-5.2.3 -->
+      <link rel="stylesheet" href="content/css/vendors/bootstrap.min.css" />
+
+      <!-- fontawesome-free-6.2.1 -->
+      <link rel="stylesheet" href="content/css/vendors/all.min.css" />
+      <!-- bootstrap-sweetalert-master -->
+      <link rel="stylesheet" href="content/css/vendors/sweetalert.css">
+
+      <link rel="stylesheet" href="content/css/style.css" />
+    <title>Like Page</title>
+</head>
+<body>
+    
+        <!--start  nav -->
+  <header class="page2Logo p-3">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-md-5 col-8 ">
+          <div class=" position-relative logo">
+            <img src="content/assets/images/logo2.png" alt="">
+           
+          </div>
+                    
+        </div>
+      </div>
+    </div>
+
+  </header>
+<!-- end nav -->
+<!-- like nav -->
+<section>
+<div class="container-fluid">
+  <div class="likeAndCard position-fixed pe-4 w-50 m-auto">
+    <div class="row text-center">
+      <div class="col-6 ">
+          <a id="likeList" class="px-3 d-inline-block p-2 position-relative " href=""><span class="text-danger fs-1"><i class="fa-solid fa-heart"></i></span>
+            <span id="totalLikes" class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-danger ">
+            0
+            </span></a>
+      </div>
+      <div class="col-6">
+            <!-- <hr class="text-secondary fs-4 py-3"> -->
+          <a id="cardList" class="px-3 d-inline-block p-2  position-relative" href=""><span class="d-block text-danger fs-1"><i class="fa-solid fa-cart-plus"></i></span>
+            <span id="totalCards" class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-danger">
+            0</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+  <!-- end like nav -->
+  <div class="VHhight"></div>
+  <!-- display data section -->
+<section>
+<div class="container-fluid">
+<div class="row g-3 px-4 fw-bold AutoLikeAdded">
+<!-- created by JS -->
+  <!-- <div class="col-lg-4 col-md-6 col-12">
+    <div class="card1 text-center  overflow-hidden rounded-2 position-relative p-0">
+      <img img-src="content/assets/images/card1.png" alt="">
+      <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+      <p>new idea to collect your pc</p>
+     <p class="priceShow">price</p>
+    </div>
+  </div> -->
+
+</div>
+</div>
+</section>
+
+
+
+    <script src="content/js/vendors/sweetalert.min.js"></script>
+    <script src="content/js/vendors/all.min.js"></script>
+    <script src="content/js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="content/js/vendors/jquery-3.6.3.min.js"></script>
+    
+    <script src="content/js/page3.js"></script>
+</body>
+</html>

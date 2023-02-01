@@ -1,0 +1,16 @@
+Dell Inspiron 15 3000 Series Laptop - Ryzen 5 3450U 4-Cores,
+ 8GB RAM, 256 GB PCIe NVMe M.2 SSD, 
+AMD Radeon Vega 8 Graphics, 
+15.6" FHD (1920x1080) Multi-Touch 220 nits Anti-glare,
+ Windows 10 - Black
+
+EGP21,669
+
+
+Brand	Dell
+Series	Inspiron 3505 Touch Display R5 3450 8GB 256GB W10
+Screen size	15 Inches
+Colour	Black
+Hard disk size	256 GB
+CPU model	Ryzen 5 3450U
+Installed RAM memory size	8 GB

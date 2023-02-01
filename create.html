@@ -1,0 +1,2459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <!-- bootstrap-5.2.3 -->
+           <link rel="stylesheet" href="content/css/vendors/bootstrap.min.css" />
+
+           <!-- fontawesome-free-6.2.1 -->
+           <link rel="stylesheet" href="content/css/vendors/all.min.css" />
+           <!-- bootstrap-sweetalert-master -->
+           <link rel="stylesheet" href="content/css/vendors/sweetalert.css">
+   
+           <link rel="stylesheet" href="content/css/style.css" />
+           
+    <title>Create PC</title>
+</head>
+<body id="createDevice">
+    <!--start  nav -->
+  <header class="page2Logo p-3">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-md-5 col-8 ">
+          <div class=" position-relative logo">
+            <img img-src="content/assets/images/logo2.png" alt="">
+           
+          </div>
+                    
+        </div>
+      </div>
+    </div>
+
+  </header>
+<!-- end nav -->
+<!-- like sound -->
+<!-- <audio id="audio" src="content/assets/audio/like sound.mp3"></audio> -->
+<!-- like Nav -->
+<div class="likeAndCard position-fixed pe-4">
+  <div class="row">
+    <div class="col-6 ">
+        <a id="likeList" class="px-3 d-inline-block p-2 position-relative " href="likePage.html" target="_self"><span class="text-danger fs-1"><i class="fa-solid fa-heart"></i></span>
+          <span id="totalLikes" class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-danger ">
+          0
+          </span></a>
+    </div>
+    <div class="col-6">
+          <!-- <hr class="text-secondary fs-4 py-3"> -->
+        <a id="cardList" class="px-3 d-inline-block p-2  position-relative" href=""><span class="d-block text-danger fs-1"><i class="fa-solid fa-cart-plus"></i></span>
+          <span id="totalCards" class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-danger">
+          0</span></a>
+    </div>
+  </div>
+</div>
+<!-- to top button -->
+<div class="row justify-content-end toTop">
+<div class="col-2">
+  <button id="toTopbtn" class="rounded-circle p-2"><i class="fa-solid fa-angles-up"></i></button>
+
+</div>
+</div>
+<!-- start header  -->
+<section>
+  <div class="container-fluid">
+    <div class="row text-center">
+      <div class="col-12">
+        <h1 id="createHeader" class="mainFormcolor fw-semibold text-capitalize pt-5">lets create your device</h1>
+        <p class="mainFormcolor createP fw-semibold text-capitalize py-1 fs-5">we will choose some main component to complate suitable pc</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end header -->
+
+<!-- choose case section -->
+<section id="cases">
+  <div class="container-fluid">
+    <div class="row text-start">
+      <div class="col-12">
+        <p class="createP mainFormcolor fw-semibold text-capitalize py-2 fs-3">step1 : <span class="mainFormcolor fw-semibold text-capitalize pt-1 fs-5">choose a case</span></p>
+      </div>
+    </div>
+
+    <div id="carouselCases" class="carousel slide h-auto carouselcomponent">
+      <div class="carousel-inner h-auto">
+        <div class="carousel-item active">
+          <div class="cases-content">
+            <div class="row g-5 px-3">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/case1.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Case: <span>Corsair 4000D Airflow</span></p>
+                    <p>Side Panel: <span>Glass</span></p>
+                    <p>color: <span>black</span></p>
+                    <p>Power Supply: <span>none</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">104.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/case2.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Case: <span>NZXT H510</span></p>
+                    <p>Side Panel: <span>Glass</span></p>
+                    <p>color: <span>white</span></p>
+                    <p>Power Supply: <span>none</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">87.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/case3.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Case: <span>Lian Li O11 EVO</span></p>
+                    <p>Side Panel: <span>Glass</span></p>
+                    <p>color: <span>Black</span></p>
+                    <p>Power Supply: <span>none</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">179</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/case4.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Case: <span>HYTE Y60</span></p>
+                    <p>Side Panel: <span>Glass</span></p>
+                    <p>color: <span>Black/white</span></p>
+                    <p>Power Supply: <span>none</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">199.99</span></p>
+                  </div>
+                </div>
+              </div>
+       
+             
+            </div>
+            
+            
+      
+      
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cases-content">
+            <div class="row g-5 px-3">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/case5.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Case: <span>NZXT H7 Flow</span></p>
+                    <p>Side Panel: <span>Glass</span></p>
+                    <p>color: <span>black</span></p>
+                    <p>Power Supply: <span>none</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">129.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/case6.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Case: <span>Fractal Pop XL Air</span></p>
+                    <p>Side Panel: <span>Glass</span></p>
+                    <p>color: <span>white</span></p>
+                    <p>Power Supply: <span>none</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">119.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/case7.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Case: <span>Eclipse G360A</span></p>
+                    <p>Side Panel: <span>Glass</span></p>
+                    <p>color: <span>Black</span></p>
+                    <p>Power Supply: <span>none</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">99.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/case8.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Case: <span>Graphite Series 780T</span></p>
+                    <p>Side Panel: <span>Glass</span></p>
+                    <p>color: <span>Black/white</span></p>
+                    <p>Power Supply: <span>none</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">750.7</span></p>
+                  </div>
+                </div>
+              </div>
+       
+             
+            </div>
+            
+            
+      
+      
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cases-content">
+            <div class="row g-5 px-3">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/case9.jpg" class="w-100" alt="">
+                  <button class="w-100 d-inline-block border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <!-- <button class="w-100 d-inline-block border border-0 signUpBtn py-3 text-capitalize fs-5 fw-semibold">like</button> -->
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Case: <span>Thermaltake 20</span></p>
+                    <p>Side Panel: <span>Glass</span></p>
+                    <p>color: <span>black</span></p>
+                    <p>Power Supply: <span>none</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">1009.98</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/case10.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Case: <span>Azza PYRAMID 804</span></p>
+                    <p>Side Panel: <span>Glass</span></p>
+                    <p>color: <span>white</span></p>
+                    <p>Power Supply: <span>none</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">664.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/case13.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Case: <span>Cougar MX330</span></p>
+                    <p>Side Panel: <span>Glass</span></p>
+                    <p>color: <span>Black</span></p>
+                    <p>Power Supply: <span>none</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">49.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/case12.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Case: <span>DIYPC F2</span></p>
+                    <p>Side Panel: <span>Glass</span></p>
+                    <p>color: <span>Black/white</span></p>
+                    <p>Power Supply: <span>none</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">45.98</span></p>
+                  </div>
+                </div>
+              </div>
+       
+             
+            </div>
+            
+            
+      
+      
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center py-3">
+        <div class="col-6 d-flex justify-content-between">
+          <button class="carousel-control-prev case-prev" type="button" data-bs-target="#carouselCases" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next case-next" type="button" data-bs-target="#carouselCases" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+     
+    </div>
+
+ <div class="row text-center hideStep">
+  <p class="createP mainFormcolor">you choose one you can go to second step <a class="mainFormcolor" href="#MotherBoard">second step</a></p>
+  <p class="createP mainFormcolor">if you want more take your time</p>
+ </div>
+    <hr class="w-75 border border-1 border-light m-auto my-4">
+  </div>
+</section>
+<!-- end choose case section -->
+<!-- choose mother board section -->
+<section id="MotherBoard">
+
+  <div class="container-fluid">
+    <div class="row text-start">
+      <div class="col-12">
+        <p class="createP mainFormcolor fw-semibold text-capitalize py-2 fs-3">step2 : <span class="mainFormcolor fw-semibold text-capitalize pt-1 fs-5">choose a MotherBoard</span></p>
+      </div>
+    </div>
+
+    <div id="carouselMotherBoards" class="carousel slide h-auto carouselcomponent">
+      <div class="carousel-inner h-auto">
+        <div class="carousel-item active">
+          <div class="cases-content">
+            <div class="row g-5 px-3">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/mother1.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Mother-Board: <span>Gigabyte A520M S2H</span></p>
+                    <p>Socket/CPU: <span>AM4</span></p>
+                    <p>Form Factor: <span>Micro ATX</span></p>
+                    <p>Memory Max: <span>64 GB</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">73.98</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/mother2.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Mother-Board: <span>ASRock H470M</span></p>
+                    <p>Socket/CPU: <span>LGA1200</span></p>
+                    <p>Form Factor: <span>Micro ATX</span></p>
+                    <p>Memory Max: <span>64 GB</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">88.40</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/mother3.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Mother-Board: <span>Asus Pro A520M-C</span></p>
+                    <p>Socket/CPU: <span>AM4</span></p>
+                    <p>Form Factor: <span>Micro ATX</span></p>
+                    <p>Memory Max: <span>32 GB</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">92.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/mother4.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Mother-Board: <span>ASRock H610M</span></p>
+                    <p>Socket/CPU: <span>LGA1700</span></p>
+                    <p>Form Factor: <span>Micro ATX</span></p>
+                    <p>Memory Max: <span>64 GB</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">99.99</span></p>
+                  </div>
+                </div>
+              </div>
+       
+             
+            </div>
+            
+            
+      
+      
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cases-content">
+            <div class="row g-5 px-3">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/mother5.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Mother-Board: <span>Biostar A32M2</span></p>
+                    <p>Socket/CPU: <span>AM4</span></p>
+                    <p>Form Factor: <span>Micro ATX</span></p>
+                    <p>Memory Max: <span>32 GB</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">100.77</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/mother6.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Mother-Board: <span>Gigabyte H610M </span></p>
+                    <p>Socket/CPU: <span>LGA1700</span></p>
+                    <p>Form Factor: <span>Micro ATX</span></p>
+                    <p>Memory Max: <span>64 GB</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">108.13</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/mother7.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Mother-Board: <span>Asus PRIME B560M</span></p>
+                    <p>Socket/CPU: <span>LGA1200</span></p>
+                    <p>Form Factor: <span>Micro ATX</span></p>
+                    <p>Memory Max: <span>128 GB</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">109.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/mother8.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Mother-Board: <span>Asus MAXIMUS VIII FORMULA</span></p>
+                    <p>Socket/CPU: <span>LGA1151</span></p>
+                    <p>Form Factor: <span>ATX</span></p>
+                    <p>Memory Max: <span>64 GB</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">2591.77</span></p>
+                  </div>
+                </div>
+              </div>
+       
+             
+            </div>
+            
+            
+      
+      
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cases-content">
+            <div class="row g-5 px-3">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/mother9.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Mother-Board: <span>Gigabyte X570 AORUS XTREME</span></p>
+                    <p>Socket/CPU: <span>LGA1151</span></p>
+                    <p>Form Factor: <span>EATX</span></p>
+                    <p>Memory Max: <span>128 GB</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">675.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/mother10.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Mother-Board: <span>MSI MEG Z490 GODLIKE</span></p>
+                    <p>Socket/CPU: <span>LGA1200</span></p>
+                    <p>Form Factor: <span>EATX</span></p>
+                    <p>Memory Max: <span>128 GB</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">667.18</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/mother11.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Mother-Board: <span>Asus ROG STRIX X670E-E</span></p>
+                    <p>Socket/CPU: <span>AM5</span></p>
+                    <p>Form Factor: <span>ATX</span></p>
+                    <p>Memory Max: <span>128 GB</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">499.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/mother12.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Mother-Board: <span>MSI MPG X570</span></p>
+                    <p>Socket/CPU: <span>AM5</span></p>
+                    <p>Form Factor: <span>ATX</span></p>
+                    <p>Memory Max: <span>128 GB</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">265.18</span></p>
+                  </div>
+                </div>
+              </div>
+       
+             
+            </div>
+            
+            
+      
+      
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center py-3">
+        <div class="col-6 d-flex justify-content-between">
+          <button class="carousel-control-prev case-prev" type="button" data-bs-target="#carouselMotherBoards" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next case-next" type="button" data-bs-target="#carouselMotherBoards" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+     
+    </div>
+
+ <div class="row text-center hideStep">
+  <p class="createP mainFormcolor">you choose one you can go to Third step <a class="mainFormcolor" href="#CPU">Third step</a></p>
+  <p class="createP mainFormcolor">if you want more take your time</p>
+ </div>
+    <hr class="w-75 border border-1 border-light m-auto my-4">
+  </div>
+
+
+</section>
+<!-- End mother board section -->
+<!-- start cpu section -->
+<section id="CPU">
+
+  <div class="container-fluid">
+    <div class="row text-start">
+      <div class="col-12">
+        <p class="createP mainFormcolor fw-semibold text-capitalize py-2 fs-3">step3 : <span class="mainFormcolor fw-semibold text-capitalize pt-1 fs-5">choose a CPU</span></p>
+      </div>
+    </div>
+
+    <div id="carouselCPU" class="carousel slide h-auto carouselcomponent">
+      <div class="carousel-inner h-auto">
+        <div class="carousel-item active">
+          <div class="cases-content">
+            <div class="row g-5 px-3">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/cpu1.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">CPU: <span>Intel Core I5-13600K</span></p>
+                    <p>Core Count: <span>14</span></p>
+                    <p>Performance: <span>3.5 GHz</span></p>
+                    <p>integrated Graphics <span>UHD Graphics 770</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">319.87</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/cpu2.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">CPU: <span>Intel Core I9-13900K</span></p>
+                    <p>Core Count: <span>24</span></p>
+                    <p>Performance: <span>3 GHz</span></p>
+                    <p>integrated Graphics <span>UHD Graphics 770</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">594.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/cpu3.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">CPU: <span>Intel Core I7-2700K</span></p>
+                    <p>Core Count: <span>12</span></p>
+                    <p>Performance: <span>2.5 GHz</span></p>
+                    <p>integrated Graphics <span>UHD Graphics 770</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">164.95</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/cpu4.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">CPU: <span>Intel Core I5-12400F</span></p>
+                    <p>Core Count: <span>6</span></p>
+                    <p>Performance: <span>2.5 GHz</span></p>
+                    <p>integrated Graphics <span>none</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">164.95</span></p>
+                  </div>
+                </div>
+              </div>
+       
+             
+            </div>
+            
+            
+      
+      
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cases-content">
+            <div class="row g-5 px-3">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/cpu5.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">CPU: <span>Intel Core I7-13700K</span></p>
+                    <p>Core Count: <span>16</span></p>
+                    <p>Performance: <span>3.4 GHz</span></p>
+                    <p>integrated Graphics <span>UHD Graphics 770</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">417.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/cpu6.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">CPU: <span>Intel Core I3-12100F</span></p>
+                    <p>Core Count: <span>4</span></p>
+                    <p>Performance: <span>3.3 GHz</span></p>
+                    <p>integrated Graphics <span>none</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">101.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/cpu7.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">CPU: <span>AMD Ryzen 5 5600X</span></p>
+                    <p>Core Count: <span>6</span></p>
+                    <p>Performance: <span>3.7 GHz</span></p>
+                    <p>integrated Graphics <span>none</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">167</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/cpu8.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">CPU: <span>AMD Ryzen 7 5800X</span></p>
+                    <p>Core Count: <span>8</span></p>
+                    <p>Performance: <span>3.8 GHz</span></p>
+                    <p>integrated Graphics <span>none</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">235.97</span></p>
+                  </div>
+                </div>
+              </div>
+       
+             
+            </div>
+            
+            
+      
+      
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cases-content">
+            <div class="row g-5 px-3">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/cpu9.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">CPU: <span>AMD Threadripper 3990X</span></p>
+                    <p>Core Count: <span>64</span></p>
+                    <p>Performance: <span>2.9 GHz</span></p>
+                    <p>integrated Graphics <span>none</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">7994.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/cpu10.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">CPU: <span>AMD Threadripper 3970X</span></p>
+                    <p>Core Count: <span>32</span></p>
+                    <p>Performance: <span>3.7 GHz</span></p>
+                    <p>integrated Graphics <span>none</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">3440</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/cpu11.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">CPU: <span>Intel Core i9-9980XE</span></p>
+                    <p>Core Count: <span>18</span></p>
+                    <p>Performance: <span>3 GHz</span></p>
+                    <p>integrated Graphics <span>none</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">2004.51</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/cpu12.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">CPU: <span>Intel Core i9-9900K</span></p>
+                    <p>Core Count: <span>8</span></p>
+                    <p>Performance: <span>3.6 GHz</span></p>
+                    <p>integrated Graphics <span>Intel UHD Graphics 630</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">909.99</span></p>
+                  </div>
+                </div>
+              </div>
+       
+             
+            </div>
+            
+            
+      
+      
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center py-3">
+        <div class="col-6 d-flex justify-content-between">
+          <button class="carousel-control-prev case-prev" type="button" data-bs-target="#carouselCPU" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next case-next" type="button" data-bs-target="#carouselCPU" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+     
+    </div>
+
+ <div class="row text-center hideStep">
+  <p class="createP mainFormcolor">you choose one you can go to Fourth step <a class="mainFormcolor" href="#RAM">Fourth step</a></p>
+  <p class="createP mainFormcolor">if you want more take your time</p>
+ </div>
+    <hr class="w-75 border border-1 border-light m-auto my-4">
+  </div>
+
+
+</section>
+<!-- end cpu section -->
+<!-- start Ram section -->
+<section id="RAM">
+
+  <div class="container-fluid">
+    <div class="row text-start">
+      <div class="col-12">
+        <p class="createP mainFormcolor fw-semibold text-capitalize py-2 fs-3">step4 : <span class="mainFormcolor fw-semibold text-capitalize pt-1 fs-5">choose a RAM</span></p>
+      </div>
+    </div>
+
+    <div id="carouselRAM" class="carousel slide h-auto carouselcomponent">
+      <div class="carousel-inner h-auto">
+        <div class="carousel-item active">
+          <div class="cases-content">
+            <div class="row g-5 px-3">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/ram1.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">RAM: <span>Corsair Vengeance LPX 16 GB</span></p>
+                    <p>speed <span>DDR4-3200</span></p>
+                    <p>Modules <span>2 x 8 GB</span></p>
+                    <p>CAS Latency <span>16</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">48.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/ram2.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">RAM: <span>Corsair Vengeance RGB Pro 32 GB</span></p>
+                    <p>speed <span>DDR4-3600</span></p>
+                    <p>Modules <span>2 x 16 GB</span></p>
+                    <p>CAS Latency <span>18</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">106.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/ram3.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">RAM: <span>Corsair Vengeance RGB Pro 16 GB</span></p>
+                    <p>speed <span>DDR4-3200</span></p>
+                    <p>Modules <span>2 x 8 GB</span></p>
+                    <p>CAS Latency <span>18</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">62.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/ram4.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">RAM: <span>G.Skill Trident Z5 RGB 32 GB</span></p>
+                    <p>speed <span>DDR5-6000</span></p>
+                    <p>Modules <span>2 x 16 GB</span></p>
+                    <p>CAS Latency <span>16</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">78.99</span></p>
+                  </div>
+                </div>
+              </div>
+       
+             
+            </div>
+            
+            
+      
+      
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cases-content">
+            <div class="row g-5 px-3">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/ram5.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">RAM: <span>Mushkin Essentials 2 GB</span></p>
+                    <p>speed <span>DDR3-1600</span></p>
+                    <p>Modules <span>1 x 2 GB</span></p>
+                    <p>CAS Latency <span>11</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">9.25</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/ram6.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">RAM: <span>Patriot PSD34G160081 4 GB</span></p>
+                    <p>speed <span>DDR3-1600</span></p>
+                    <p>Modules <span>1 x 4 GB</span></p>
+                    <p>CAS Latency <span>11</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">11.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/ram7.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3  py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">RAM: <span>Kingston KVR16R11D4/8 8 GB</span></p>
+                    <p>speed <span>DDR3-1600</span></p>
+                    <p>Modules <span>1 x 8 GB</span></p>
+                    <p>CAS Latency <span>11</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">16.98</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/ram8.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">RAM: <span>Patriot Signature 8 GB</span></p>
+                    <p>speed <span>DDR3-1333</span></p>
+                    <p>Modules <span>1 x 4GB</span></p>
+                    <p>CAS Latency <span>11</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">18.71</span></p>
+                  </div>
+                </div>
+              </div>
+       
+             
+            </div>
+            
+            
+      
+      
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cases-content">
+            <div class="row g-5 px-3">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/ram9.jpg" class="w-100 h-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">RAM: <span>G.Skill Ripjaws V 8 GB</span></p>
+                    <p>speed <span>DDR4-2133</span></p>
+                    <p>Modules <span>2x 4GB</span></p>
+                    <p>CAS Latency <span>15</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">28.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/ram10.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">RAM: <span>Silicon Power XPOWER Turbine 16 GB</span></p>
+                    <p>speed <span>DDR4-3200</span></p>
+                    <p>Modules <span>2x 8GB</span></p>
+                    <p>CAS Latency <span>15</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">39.97</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/ram11.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">RAM: <span>G.Skill Trident Z5 RGB 64 GB</span></p>
+                    <p>speed <span>DDR5-6400</span></p>
+                    <p>Modules <span>2x 32GB</span></p>
+                    <p>CAS Latency <span>32</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">399.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/ram12.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">RAM: <span>Corsair Vengeance RGB 64 GB</span></p>
+                    <p>speed <span>DDR5-5600</span></p>
+                    <p>Modules <span>2x 32GB</span></p>
+                    <p>CAS Latency <span>36</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">329.99</span></p>
+                  </div>
+                </div>
+              </div>
+       
+             
+            </div>
+            
+            
+      
+      
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center py-3">
+        <div class="col-6 d-flex justify-content-between">
+          <button class="carousel-control-prev case-prev" type="button" data-bs-target="#carouselRAM" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next case-next" type="button" data-bs-target="#carouselRAM" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+     
+    </div>
+
+ <div class="row text-center hideStep">
+  <p class="createP mainFormcolor">you choose one you can go to 5th step <a class="mainFormcolor" href="#HARD">5th step</a></p>
+  <p class="createP mainFormcolor">if you want more take your time</p>
+ </div>
+    <hr class="w-75 border border-1 border-light m-auto my-4">
+  </div>
+
+
+</section>
+<!-- end Ram section -->
+<!-- Start Hard Drive section -->
+<section id="HARD">
+
+  <div class="container-fluid">
+    <div class="row text-start">
+      <div class="col-12">
+        <p class="createP mainFormcolor fw-semibold text-capitalize py-2 fs-3">step5 : <span class="mainFormcolor fw-semibold text-capitalize pt-1 fs-5">choose a Storage(Hard)</span></p>
+      </div>
+    </div>
+
+    <div id="carouselHard" class="carousel slide h-auto carouselcomponent">
+      <div class="carousel-inner h-auto">
+        <div class="carousel-item active">
+          <div class="cases-content">
+            <div class="row g-5 px-3">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/hard1.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Hard: <span>Corsair MP600 PRO NH</span></p>
+                    <p>Capacity <span>4 TB</span></p>
+                    <p>Type <span> SSD </span></p>
+                    <p>Form Factor<span>M.2-2280</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">474.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/hard2.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Hard: <span>Corsair MP600 GS</span></p>
+                    <p>Capacity <span>1 TB</span></p>
+                    <p>Type <span> SSD </span></p>
+                    <p>Form Factor<span>M.2-2280</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">74.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/hard3.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Hard: <span>MSI SPATIUM M480 HS</span></p>
+                    <p>Capacity <span>2 TB</span></p>
+                    <p>Type <span> SSD </span></p>
+                    <p>Form Factor<span>M.2-2280</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">400.11</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/hard4.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Hard: <span>Toshiba MG08</span></p>
+                    <p>Capacity <span>16 TB</span></p>
+                    <p>Type <span> 7200 RPM </span></p>
+                    <p>Form Factor<span>3.5</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">230</span></p>
+                  </div>
+                </div>
+              </div>
+       
+             
+            </div>
+            
+            
+      
+      
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cases-content">
+            <div class="row g-5 px-3">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/hard5.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Hard: <span>Western Digital WD_BLACK</span></p>
+                    <p>Capacity <span>6 TB</span></p>
+                    <p>Type <span> 7200 RPM </span></p>
+                    <p>Form Factor<span>3.5</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">119.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/hard6.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Hard: <span>Patriot P210</span></p>
+                    <p>Capacity <span>512 GB</span></p>
+                    <p>Type <span>SSD </span></p>
+                    <p>Form Factor<span>2.5</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">25.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/hard7.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Hard: <span>Inland Performance Plus</span></p>
+                    <p>Capacity <span>2 TB</span></p>
+                    <p>Type <span>SSD </span></p>
+                    <p>Form Factor<span>M.2-2280</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">219.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/hard8.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Hard: <span>MSI SPATIUM M480 PLAY</span></p>
+                    <p>Capacity <span>1 TB</span></p>
+                    <p>Type <span>SSD </span></p>
+                    <p>Form Factor<span>M.2-2280</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">131.77</span></p>
+                  </div>
+                </div>
+              </div>
+       
+             
+            </div>
+            
+            
+      
+      
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cases-content">
+            <div class="row g-5 px-3">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/hard9.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Hard: <span>Inland Prime</span></p>
+                    <p>Capacity <span>500 GB</span></p>
+                    <p>Type <span>SSD </span></p>
+                    <p>Form Factor<span>M.2-2280</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">39.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/hard10.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Hard: <span>ADATA XPG GAMMIX S7</span></p>
+                    <p>Capacity <span>1 TB</span></p>
+                    <p>Type <span>SSD </span></p>
+                    <p>Form Factor<span>M.2-2280</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">74.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/hard11.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Hard: <span>Seagate FireCuda</span></p>
+                    <p>Capacity <span>500 GB</span></p>
+                    <p>Type <span>Hybrid </span></p>
+                    <p>Form Factor<span>2.5</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">80</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/hard12.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Hard: <span>Seagate FireCuda</span></p>
+                    <p>Capacity <span>1 TB</span></p>
+                    <p>Type <span>Hybrid </span></p>
+                    <p>Form Factor<span>2.5</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">135</span></p>
+                  </div>
+                </div>
+              </div>
+       
+             
+            </div>
+            
+            
+      
+      
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center py-3">
+        <div class="col-6 d-flex justify-content-between">
+          <button class="carousel-control-prev case-prev" type="button" data-bs-target="#carouselHard" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next case-next" type="button" data-bs-target="#carouselHard" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+     
+    </div>
+
+ <div class="row text-center hideStep">
+  <p class="createP mainFormcolor">you choose one you can go to 6th step <a class="mainFormcolor" href="#PowerSupply">6th step</a></p>
+  <p class="createP mainFormcolor">if you want more take your time</p>
+ </div>
+    <hr class="w-75 border border-1 border-light m-auto my-4">
+  </div>
+
+
+</section>
+<!-- end Hard Drive section -->
+<!-- Start Power Supply section -->
+<section id="PowerSupply">
+
+  <div class="container-fluid">
+    <div class="row text-start">
+      <div class="col-12">
+        <p class="createP mainFormcolor fw-semibold text-capitalize py-2 fs-3">step6 : <span class="mainFormcolor fw-semibold text-capitalize pt-1 fs-5">choose a Power Supply</span></p>
+      </div>
+    </div>
+
+    <div id="carouselPowerSupply" class="carousel slide h-auto carouselcomponent">
+      <div class="carousel-inner h-auto">
+        <div class="carousel-item active">
+          <div class="cases-content">
+            <div class="row g-5 px-3">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/power1.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Power-Supply: <span>Corsair RM65</span></p>
+                    <p>Type: <span>ATX</span></p>
+                    <p>Wattage : <span> 650 W</span></p>
+                    <p>Efficiency Rating<span>80+ Gold</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">94.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/power2.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Power-Supply: <span>Corsair RM1000x</span></p>
+                    <p>Type: <span>ATX</span></p>
+                    <p>Wattage : <span> 1000 W</span></p>
+                    <p>Efficiency Rating<span>80+ Gold</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">189.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/power3.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Power-Supply: <span>Corsair RM850</span></p>
+                    <p>Type: <span>ATX</span></p>
+                    <p>Wattage : <span> 850 W</span></p>
+                    <p>Efficiency Rating<span>80+ Gold</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">124.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/power4.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Power-Supply: <span>Corsair SF750</span></p>
+                    <p>Type: <span>SFX</span></p>
+                    <p>Wattage : <span> 750 W</span></p>
+                    <p>Efficiency Rating<span>80+ Platinum</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">165</span></p>
+                  </div>
+                </div>
+              </div>
+       
+             
+            </div>
+            
+            
+      
+      
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cases-content">
+            <div class="row g-5 px-3">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/power5.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Power-Supply: <span>Corsair HX1000i (2022)</span></p>
+                    <p>Type: <span>ATX</span></p>
+                    <p>Wattage : <span> 1000 W</span></p>
+                    <p>Efficiency Rating<span>80+ Platinum</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">259.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/power6.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Power-Supply: <span>Thermaltake Smart</span></p>
+                    <p>Type: <span>ATX</span></p>
+                    <p>Wattage : <span> 600 W</span></p>
+                    <p>Efficiency Rating<span>80+ </span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">39.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/power7.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Power-Supply: <span>Asus ROG THOR 1600T Gaming</span></p>
+                    <p>Type: <span>ATX</span></p>
+                    <p>Wattage : <span> 1600 W</span></p>
+                    <p>Efficiency Rating<span>80+ Titanium</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">699.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/power8.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Power-Supply: <span>Asus TUF Gaming</span></p>
+                    <p>Type: <span>ATX</span></p>
+                    <p>Wattage : <span> 750 W</span></p>
+                    <p>Efficiency Rating<span>80+ Bronze</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">109.99</span></p>
+                  </div>
+                </div>
+              </div>
+       
+             
+            </div>
+            
+            
+      
+      
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cases-content">
+            <div class="row g-5 px-3">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/power9.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Power-Supply: <span>Raidmax Vortex</span></p>
+                    <p>Type: <span>ATX</span></p>
+                    <p>Wattage : <span> 600 W</span></p>
+                    <p>Efficiency Rating<span>80+ Gold</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">44.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/power10.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Power-Supply: <span>Silverstone SX300-B</span></p>
+                    <p>Type: <span>SFX</span></p>
+                    <p>Wattage : <span> 300 W</span></p>
+                    <p>Efficiency Rating<span>80+ Bronze</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">467.68</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/power11.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Power-Supply: <span>Fractal Design Ion Gold</span></p>
+                    <p>Type: <span>ATX</span></p>
+                    <p>Wattage : <span> 850 W</span></p>
+                    <p>Efficiency Rating<span>80+ Gold</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">237</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/power12.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Power-Supply: <span>EVGA SuperNOVA 850</span></p>
+                    <p>Type: <span>ATX</span></p>
+                    <p>Wattage : <span> 850 W</span></p>
+                    <p>Efficiency Rating<span>80+ Platinum</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">173.51</span></p>
+                  </div>
+                </div>
+              </div>
+       
+             
+            </div>
+            
+            
+      
+      
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center py-3">
+        <div class="col-6 d-flex justify-content-between">
+          <button class="carousel-control-prev case-prev" type="button" data-bs-target="#carouselPowerSupply" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next case-next" type="button" data-bs-target="#carouselPowerSupply" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+     
+    </div>
+
+ <div class="row text-center hideStep">
+  <p class="createP mainFormcolor">you choose one you can go to 7th step <a class="mainFormcolor" href="#VedioCard">7th step</a></p>
+  <p class="createP mainFormcolor">if you want more take your time</p>
+ </div>
+    <hr class="w-75 border border-1 border-light m-auto my-4">
+  </div>
+
+
+</section>
+<!-- End Power Supply section -->
+<!-- start Vedio Card section -->
+
+<section id="VedioCard">
+
+  <div class="container-fluid">
+    <div class="row text-start">
+      <div class="col-12">
+        <p class="createP mainFormcolor fw-semibold text-capitalize py-2 fs-3">step7 : <span class="mainFormcolor fw-semibold text-capitalize pt-1 fs-5">choose a Vedio Card</span></p>
+      </div>
+    </div>
+
+    <div id="carouselVedioCard" class="carousel slide h-auto carouselcomponent">
+      <div class="carousel-inner h-auto">
+        <div class="carousel-item active">
+          <div class="cases-content">
+            <div class="row g-5 px-3">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/vcard1.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Vedio-Card: <span>AMD FirePro W5000</span></p>
+                    <p>Chipset: <span>FirePro W5000</span></p>
+                    <p>Memory : <span>2 GB</span></p>
+                    <p>Core Clock<span>825 MHz</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">99.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/vcard2.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Vedio-Card: <span>EVGA 02G-P4-6333-KR</span></p>
+                    <p>Chipset: <span>GeForce GT 1030</span></p>
+                    <p>Memory : <span>2 GB</span></p>
+                    <p>Core Clock<span>1290 MHz</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">119.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/vcard3.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Vedio-Card: <span>Gigabyte EAGLE</span></p>
+                    <p>Chipset: <span>Radeon RX 6500 XT</span></p>
+                    <p>Memory : <span>4 GB</span></p>
+                    <p>Core Clock<span>2310 MHz</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">154.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/vcard4.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Vedio-Card: <span>HP FirePro W7000</span></p>
+                    <p>Chipset: <span>FirePro W7000</span></p>
+                    <p>Memory : <span>4 GB</span></p>
+                    <p>Core Clock<span>950 MHz</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">269.95</span></p>
+                  </div>
+                </div>
+              </div>
+       
+             
+            </div>
+            
+            
+      
+      
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cases-content">
+            <div class="row g-5 px-3">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/vcard5.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Vedio-Card: <span>ATI FirePro W7000</span></p>
+                    <p>Chipset: <span>FirePro W7000</span></p>
+                    <p>Memory : <span>4 GB</span></p>
+                    <p>Core Clock<span>950 MHz</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">269.95</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/vcard6.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Vedio-Card: <span>EVGA SC Ultra Black</span></p>
+                    <p>Chipset: <span>GeForce GTX 1660 SUPER</span></p>
+                    <p>Memory : <span>6 GB</span></p>
+                    <p>Core Clock<span>1530 MHz</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">252.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/vcard7.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Vedio-Card: <span>ATI FirePro RG220A</span></p>
+                    <p>Chipset: <span>FirePro RG220A</span></p>
+                    <p>Memory : <span>0.5 GB</span></p>
+                    <p>Core Clock<span>800 MHz</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">245</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/vcard8.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Vedio-Card: <span>NVIDIA Founders Edition</span></p>
+                    <p>Chipset: <span>GeForce RTX 4080</span></p>
+                    <p>Memory : <span>16 GB</span></p>
+                    <p>Core Clock<span>2210 MHz</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">1383</span></p>
+                  </div>
+                </div>
+              </div>
+       
+             
+            </div>
+            
+            
+      
+      
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cases-content">
+            <div class="row g-5 px-3">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/vcard9.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Vedio-Card: <span>Asus TUF GAMING OC</span></p>
+                    <p>Chipset: <span>GeForce RTX 4070</span></p>
+                    <p>Memory : <span>12 GB</span></p>
+                    <p>Core Clock<span>2310 MHz</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">849.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/vcard10.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Vedio-Card: <span>Zotac GAMING Twin Edge</span></p>
+                    <p>Chipset: <span>GeForce RTX 3050</span></p>
+                    <p>Memory : <span>8 GB</span></p>
+                    <p>Core Clock<span>1550 MHz</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">279.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/vcard11.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Vedio-Card: <span>Gigabyte GAMING OC</span></p>
+                    <p>Chipset: <span>Radeon RX 6500 XT</span></p>
+                    <p>Memory : <span>4 GB</span></p>
+                    <p>Core Clock<span>2310 MHz</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">179.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/vcard12.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Vedio-Card: <span>Acer Predator BiFrost OC</span></p>
+                    <p>Chipset: <span>Arc A770</span></p>
+                    <p>Memory : <span>16 GB</span></p>
+                    <p>Core Clock<span>2200 MHz</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">363.99</span></p>
+                  </div>
+                </div>
+              </div>
+       
+             
+            </div>
+            
+            
+      
+      
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center py-3">
+        <div class="col-6 d-flex justify-content-between">
+          <button class="carousel-control-prev case-prev" type="button" data-bs-target="#carouselVedioCard" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next case-next" type="button" data-bs-target="#carouselVedioCard" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+     
+    </div>
+
+ <div class="row text-center hideStep">
+  <p class="createP mainFormcolor">you choose one you can go to 8th step <a class="mainFormcolor" href="#CPUCooler">8th step</a></p>
+  <p class="createP mainFormcolor">if you want more take your time</p>
+ </div>
+    <hr class="w-75 border border-1 border-light m-auto my-4">
+  </div>
+
+
+</section>
+<!-- End Vedio Card section -->
+
+<!-- Start CPU cooler Section -->
+<section id="CPUCooler">
+
+  <div class="container-fluid">
+    <div class="row text-start">
+      <div class="col-12">
+        <p class="createP mainFormcolor fw-semibold text-capitalize py-2 fs-3">step8 : <span class="mainFormcolor fw-semibold text-capitalize pt-1 fs-5">choose a CPU cooler</span></p>
+      </div>
+    </div>
+
+    <div id="carouselCPUCooler" class="carousel slide h-auto carouselcomponent">
+      <div class="carousel-inner h-auto">
+        <div class="carousel-item active">
+          <div class="cases-content">
+            <div class="row g-5 px-3">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/coler1.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">CPU-Cooler: <span>ARCTIC Alpine 12 LP</span></p>
+                    <p>Fan RPM: <span>100 - 2000 RPM</span></p>
+                    <p>Noise Level : <span>17.39 - 22.7 dB</span></p>
+                    <p>Color<span>black/white</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">10.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/coler2.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">CPU-Cooler: <span>Thermaltake Gravity i2</span></p>
+                    <p>Fan RPM: <span>100 - 2000 RPM</span></p>
+                    <p>Noise Level : <span>17.39 - 22.7 dB</span></p>
+                    <p>Color<span>black/white</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">11.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/coler3.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">CPU-Cooler: <span>Thermalright Assassi X</span></p>
+                    <p>Fan RPM: <span>1550 RPM</span></p>
+                    <p>Noise Level : <span>25.6dB</span></p>
+                    <p>Color<span>black/Silver</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">22.90</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/coler4.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">CPU-Cooler: <span>Cooler Master i71C RGB</span></p>
+                    <p>Fan RPM: <span>650 RPM</span></p>
+                    <p>Noise Level : <span>25.6dB</span></p>
+                    <p>Color<span>black</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">22.99</span></p>
+                  </div>
+                </div>
+              </div>
+       
+             
+            </div>
+            
+            
+      
+      
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cases-content">
+            <div class="row g-5 px-3">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/coler5.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">CPU-Cooler: <span>Thermalright AXP90-X47</span></p>
+                    <p>Fan RPM: <span>2700 RPM</span></p>
+                    <p>Noise Level : <span>22.4dB</span></p>
+                    <p>Color<span>Gray</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">25.90</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/coler6.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">CPU-Cooler: <span>Antec A40PRO</span></p>
+                    <p>Fan RPM: <span>2200 RPM</span></p>
+                    <p>Noise Level : <span>16-23dB</span></p>
+                    <p>Color<span>Gray/black</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">27.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/coler8.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">CPU-Cooler: <span>NZXT T120 RGB</span></p>
+                    <p>Fan RPM: <span>1800 RPM</span></p>
+                    <p>Noise Level : <span>17-27.5dB</span></p>
+                    <p>Color<span>black</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">59.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/coler7.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">CPU-Cooler: <span>NZXT Kraken Z63 RGB</span></p>
+                    <p>Fan RPM: <span>1500 RPM</span></p>
+                    <p>Noise Level : <span>22-33dB</span></p>
+                    <p>Color<span>black</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">264.99</span></p>
+                  </div>
+                </div>
+              </div>
+       
+             
+            </div>
+            
+            
+      
+      
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cases-content">
+            <div class="row g-5 px-3">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/coler9.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">CPU-Cooler: <span>Deepcool LS520</span></p>
+                    <p>Fan RPM: <span>2250 RPM</span></p>
+                    <p>Noise Level : <span>32.9dB</span></p>
+                    <p>Color<span>black</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">114.98</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/coler10.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">CPU-Cooler: <span>Lian Li Galahad AIO360</span></p>
+                    <p>Fan RPM: <span>1900 RPM</span></p>
+                    <p>Noise Level : <span>32dB</span></p>
+                    <p>Color<span>White/Silver</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">169.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/coler11.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">CPU-Cooler: <span>ID-COOLING ZOOMFLOW X</span></p>
+                    <p>Fan RPM: <span>1500 RPM</span></p>
+                    <p>Noise Level : <span>18dB</span></p>
+                    <p>Color<span>Black</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">79.98</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/coler12.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">CPU-Cooler: <span>Thermalright Assassin X</span></p>
+                    <p>Fan RPM: <span>1550 RPM</span></p>
+                    <p>Noise Level : <span>25dB</span></p>
+                    <p>Color<span>White/Silver</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">22.90</span></p>
+                  </div>
+                </div>
+              </div>
+       
+             
+            </div>
+            
+            
+      
+      
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center py-3">
+        <div class="col-6 d-flex justify-content-between">
+          <button class="carousel-control-prev case-prev" type="button" data-bs-target="#carouselCPUCooler" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next case-next" type="button" data-bs-target="#carouselCPUCooler" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+     
+    </div>
+
+ <div class="row text-center hideStep">
+  <p class="createP mainFormcolor">you choose most component you can go to Last step <a class="mainFormcolor" href="#Screen">Last step</a></p>
+  <p class="createP mainFormcolor">if you want more take your time</p>
+ </div>
+    <hr class="w-75 border border-1 border-light m-auto my-4">
+  </div>
+
+
+</section>
+<!-- End CPU cooler Section -->
+<!-- Start Screen Section -->
+<section id="Screen">
+
+  <div class="container-fluid">
+    <div class="row text-start">
+      <div class="col-12">
+        <p class="createP mainFormcolor fw-semibold text-capitalize py-2 fs-3">Last Step : <span class="mainFormcolor fw-semibold text-capitalize pt-1 fs-5">choose Your Screen</span></p>
+      </div>
+    </div>
+
+    <div id="carouselScreen" class="carousel slide h-auto carouselcomponent">
+      <div class="carousel-inner h-auto">
+        <div class="carousel-item active">
+          <div class="cases-content">
+            <div class="row g-5 px-3">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/screen1.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Screen: <span>Dell E1914H</span></p>
+                    <p>Size: <span>18.5</span></p>
+                    <p>Resolution : <span>1366 x 768</span></p>
+                    <p>Response Time<span>5 ms</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">54.95</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/screen2.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Screen: <span>Acer K202HQL bi</span></p>
+                    <p>Size: <span>19.5</span></p>
+                    <p>Resolution : <span>1600x900</span></p>
+                    <p>Response Time<span>5 ms</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">74.98</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/screen3.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Screen: <span>Acer EK220Q Abi</span></p>
+                    <p>Size: <span>12.5</span></p>
+                    <p>Resolution : <span>1920x1080</span></p>
+                    <p>Response Time<span>5 ms</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">79</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/screen4.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Screen: <span>LG 24MK600M-B</span></p>
+                    <p>Size: <span>24</span></p>
+                    <p>Resolution : <span>1920x1080</span></p>
+                    <p>Response Time<span>5 ms</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">106.99</span></p>
+                  </div>
+                </div>
+              </div>
+       
+             
+            </div>
+            
+            
+      
+      
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cases-content">
+            <div class="row g-5 px-3">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/screen5.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Screen: <span>Samsung CRG50</span></p>
+                    <p>Size: <span>24</span></p>
+                    <p>Resolution : <span>1920x1080</span></p>
+                    <p>Response Time<span>4 ms</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">178.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/screen6.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Screen: <span>Sceptre C248B-144R</span></p>
+                    <p>Size: <span>24</span></p>
+                    <p>Resolution : <span>1920x1080</span></p>
+                    <p>Response Time<span>3 ms</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">170.97</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/screen7.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Screen: <span>Sony INZONE M3</span></p>
+                    <p>Size: <span>27</span></p>
+                    <p>Resolution : <span>1920x1080</span></p>
+                    <p>Response Time<span>3 ms</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">498</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/screen8.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Screen: <span>Dell E2715H</span></p>
+                    <p>Size: <span>27</span></p>
+                    <p>Resolution : <span>1920x1080</span></p>
+                    <p>Response Time<span>8 ms</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">495.75</span></p>
+                  </div>
+                </div>
+              </div>
+       
+             
+            </div>
+            
+            
+      
+      
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="cases-content">
+            <div class="row g-5 px-3">
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/screen9.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Screen: <span>LG 34GL750-B</span></p>
+                    <p>Size: <span>34</span></p>
+                    <p>Resolution : <span>2560x1080</span></p>
+                    <p>Response Time<span>5 ms</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">484.95</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/screen10.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Screen: <span>Samsung ARK</span></p>
+                    <p>Size: <span>55</span></p>
+                    <p>Resolution : <span>3840x2160</span></p>
+                    <p>Response Time<span>5 ms</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">2299.98</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/screen11.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Screen: <span>MSI Optix MEG381CQR Plus</span></p>
+                    <p>Size: <span>37.5</span></p>
+                    <p>Resolution : <span>3840x1600</span></p>
+                    <p>Response Time<span>1 ms</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">1599.99</span></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 col-12">
+                <div class="case--content rounded-4 overflow-hidden ">
+                  <span class="like text-center"><i class="fa-solid fa-heart"></i></span>
+                  <img img-src="content/assets/images/screen12.jpg" class="w-100" alt="">
+                  <button class="w-100 border border-0 createBtn py-md-3 py-1 text-capitalize fs-5 fw-semibold">add</button>
+                  <div class="case--content--data mainFormcolor fw-light text-center pt-4">
+                    <p class="case--content--data--type">Screen: <span>Asus ROG Swift OLED PG42UQ</span></p>
+                    <p>Size: <span>41.5</span></p>
+                    <p>Resolution : <span>3840x2160</span></p>
+                    <p>Response Time<span>0.1 ms</span></p>
+                    <p class="cases--content--data--price">Price: $<span class="price-num">1399</span></p>
+                  </div>
+                </div>
+              </div>
+       
+             
+            </div>
+            
+            
+      
+      
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center py-3">
+        <div class="col-6 d-flex justify-content-between">
+          <button class="carousel-control-prev case-prev" type="button" data-bs-target="#carouselScreen" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next case-next" type="button" data-bs-target="#carouselScreen" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+     
+    </div>
+
+ <div class="row text-center hideStep">
+  <p class="createP mainFormcolor text-capitalize">we hope that you find suitable component</p>
+  <p class="createP mainFormcolor text-capitalize">you can show your collection here <a class="mainFormcolor" href="#collection">My Collection</a></p>
+ 
+ </div>
+    <hr class="w-75 border border-1 border-light m-auto my-4">
+  </div>
+
+
+</section>
+
+<!-- End Screen Section -->
+
+<!-- start collection Section -->
+<section id="collection">
+<div class="container-fluid">
+<div class="row justify-content-center">
+  <div class="col-lg-8 col-12">
+    <ul class="myCollection p-0 m-0 ">
+      <li class="text-light rounded-3 d-flex justify-content-evenly text-center my-3">
+        <span class="p-2 w-50">type</span>
+        <span class="p-2 w-50">price</span>       
+      </li>
+      
+    </ul>
+    <ul class="TotalPrice p-0 m-0 ">
+      <li class="text-light rounded-3 d-flex justify-content-evenly text-center my-3">
+        <span class="p-2 w-50">Total</span>
+        <span class="p-2 w-50 total">0</span>       
+      </li>
+      
+    </ul>
+    <div class="d-flex justify-content-center pb-5">
+      <button class="text-capitalize text-center w-50 bg-transparent addtotal p-3 rounded-4" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">add to my cards</button>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        
+          <div class="modal-content">
+            <div class="modal-header d-flex justify-content-between">
+              <div class=" position-relative logo text-center">
+                <img img-src="content/assets/images/logo2.png" alt="">
+               
+              </div>
+              <!-- <p class="modal-title fs-5 text-end text-capitalize mainFormcolor" id="exampleModalLabel">maintenance request</p> -->
+              <button type="button" class="btn-close ms-3" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+          
+             <p id="endMessage" class="text-uppercase text-danger fs-2 text-center fw-bold "> you not choose any components</p>
+    
+             
+            </div>
+        
+            <div class="modal-footer d-flex justify-content-center">
+              <button type="button" class="btn btn-secondary rounded-3 signUpBtn" data-bs-dismiss="modal">Close</button>
+              <!-- <button id="sendRequestBtn" class="btn btn-primary rounded-3 text-capitalize createBtn">back to main page</button> -->
+              <a  class="btn  rounded-3 text-capitalize createBtn" href="index.html" target="_self">back to main page</a>
+            </div>
+          </div>
+       
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End collection Section -->
+<!-- *****************start Footer section(7th section) -->
+<footer id="footer">
+  <div class="container-fluid">
+    <div class="row text-center pt-3">
+      
+      <div class="col-2">
+        <img img-src="content/assets/images/lood1.webp" alt="">
+      </div>
+      <div class="col-2">
+        <img img-src="content/assets/images/lood6.png" alt="">
+      </div>
+      <div class="col-2">
+        <img img-src="content/assets/images/lood7.jpg" alt="">
+      </div>
+      <div class="col-2">
+        <img img-src="content/assets/images/lood8.jpg" alt="">
+      </div>
+      <div class="col-2">
+        <img img-src="content/assets/images/lood9.webp" alt="">
+      </div>
+      <div class="col-2">
+        <img img-src="content/assets/images/lood10.png" class="bg-light" alt="">
+      </div>
+      
+    </div>
+    <div class="row text-center justify-content-center py-3">
+      <hr class="w-75 text-white-50 mt-2">
+    </div>
+    
+<div class="row text-center ">
+  <p class="fs-5 text-white-50 text-capitalize">copy right @ <span class="copyRight"></span></p>
+  <p class="fs-5 text-capitalize">done by Ahmed Mohamed Abdeldaiem. All Rights Reserved.</p>
+  <div class="row justify-content-evenly">
+    <div class="col-3 d-flex ps-4 justify-content-start gap-3 fs-3">
+                    
+      <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+      <a href="http://ww.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+  </div>
+  <div class="col-3">
+    <img id="footerimg" class="w-100 border border-0 rounded-0" img-src="content/assets/images/demo2-payment.jpg" alt="">
+
+  </div>
+    <div class="col-3 d-flex gap-3 justify-content-end pe-4 fs-3" >
+      <a href=""><i class="fa-solid fa-check"></i></a>
+      <a href="https://developer.mozilla.org/en-US/" target="_blank"><i class="fa-brands fa-square-js"></i></a>
+      <a href="https://www.w3schools.com/" target="_blank"><i class="fa-brands fa-css3-alt"></i></a>
+      <a href="https://www.w3schools.com/" target="_blank"><i class="fa-brands fa-html5"></i></a>
+      <a href="https://www.w3schools.com/" target="_blank"><i class="fa-solid fa-code"></i></a>
+  </div>
+  </div>
+  
+</div>
+
+  </div>
+</footer>
+<!-- *****************End Footer section(7th section) -->
+    <script src="content/js/vendors/sweetalert.min.js"></script>
+    <script src="content/js/vendors/all.min.js"></script>
+    <script src="content/js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="content/js/vendors/jquery-3.6.3.min.js"></script>
+    
+    <script src="content/js/page2.js"></script>
+    <!-- <script src="content/js/page1.js"></script> -->
+</body>
+</html>

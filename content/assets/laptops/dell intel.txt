@@ -1,0 +1,15 @@
+Dell Intel Core i3-1005G1 Processor 15.6in Display Laptop 
+(8GB RAM, 1TB Hard Drive, U-HD Graphics, Windows 10)
+
+
+Brand	Dell
+Screen size	15.6 Miles
+Hard disk size	1 GB
+CPU model	Core i3-10110Y
+Operating System	Windows
+CPU speed	2.1 Hz
+Item weight	1 Kilograms
+Processor count	1
+CPU manufacturer	Intel
+
+EGP13,800.00

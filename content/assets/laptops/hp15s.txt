@@ -1,0 +1,19 @@
+HP Laptop 15s-fq5009ne (6G3H3EA) 
+(Core i3-1215U 6 Cores -Ram 4 GB DDR4-3200 MHz-Hard 512 GB PCIe®️ NVMe™️ M.2 SSD 
+- GPU Intel®️ UHD Graphics -Display 15.6 HD (1366 x 768)
+ -Color Black -OS DOS)
+
+
+EGP13,999.00
+
+
+Brand	HP
+Series	HP Laptop 15s-fq5009ne (6G3H3EA)
+Screen size	15.6 Inches
+Colour	Black
+CPU model	Core i3
+Installed RAM memory size	4 GB
+Operating System	DOS
+Graphics card description	Integrated
+CPU speed	3.3 GHz
+Hard disk description	SSD
